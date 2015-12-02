@@ -88,4 +88,23 @@ section.play {
 	:-ms-input-placeholder { /* Internet Explorer 10-11 */
 	   color: $color-silver;
 	}
+
+}
+
+.startCircle {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	background: #F06292;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: 25px;
+
+	#startTimer {
+		color: $color-white !important;
+		font-family: $title-font;
+		font-size: em(24px);
+		font-weight: 400;
+		line-height: 70px !important;
+	}
 }

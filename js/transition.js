@@ -9,10 +9,35 @@ function moveFromTo(from, to) {
 	$(to).removeClass('display-none');
 }
 
+var gameStartTime = 3;
+
 function submitName(name) {
 	$('h3.username').text($(name).val());
-	console.log($(name).val());
-	console.log($('h3.username').text());
 	moveFromTo(".name", ".play");
-	$(".answers").focus();
+
+	loadSentences();
+
+	swal({
+		title: "Get Ready",
+		text: "<div class=\"startCircle\"><h2 id=\"startTimer\"></h2></div>",
+		timer: 3000,
+		html: true,
+		showConfirmButton: false
+	});
+
+	$("#startTimer").text(gameStartTime);
+	var gameStartTimer = setInterval(gameStartCD, 1000);
+
+	setTimeout(function(){
+		clearInterval(gameStartTimer);
+		
+		$(".answers").focus();
+		startGame();
+    }, 3000);  
+}
+
+
+function gameStartCD() {
+	gameStartTime--;
+	$("#startTimer").text(gameStartTime);
 }

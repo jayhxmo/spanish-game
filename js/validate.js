@@ -1,9 +1,7 @@
 // validate.js
-var cardCount = 10;
-
 var points = 0;
 function validate(input) {
-	if ($(input).val() == "answer") {
+	if ($(input).val() == "") {
 		$('.button--accept[data-stack = stack_buana]').click();
 		points += 100;
 	}
@@ -34,13 +32,6 @@ function gameOver() {
 			type: "error",
 			showConfirmButton: false
 		});
-
-		// swal({
-		// 	title: "Game Over",
-		// 	text: "You did a terrible job with a score of " + points,
-		// 	type: "error",
-		// 	confirmButtonText: "Aprender"
-		// });
 	}
 }
 

@@ -28,12 +28,16 @@
 	-ms-user-select: none;
 	user-select: none;
 	pointer-events: auto;
-}
 
-.stack__item img {
-	width: 100%;
-	display: block;
-	pointer-events: none;
+	@include vertical-parent;
+
+	.container {
+		@include vertical-center;
+		color: $color-white;
+		font-size: em(24px);
+		font-weight: 400;
+		line-height: 1.5;
+	}
 }
 
 .controls {

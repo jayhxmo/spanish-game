@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div class="background color-0"></div>
-		<section class="introduction display-none">
+		<section class="introduction">
 			<div class="container">
 				<h1 class="title">Juego de el Pret&eacute;rito</h1>
 				<button onclick="moveFromTo('.introduction', '.name')">Play</button>
@@ -21,7 +21,7 @@
 				<button>Learn</button>
 				<button>Leaderboard</button>
 			</div>
-			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park, Ohm Nabar, Philip Hahn</s></h4>
+			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park,</s> Ohm Nabar, <s>Philip Hahn</s></h4>
 		</section>
 
 		<section class="name display-none">
@@ -34,7 +34,7 @@
 			</div>
 		</section>
 
-		<section class="play">
+		<section class="play display-none">
 			<nav class="statusBar">
 				<h3 class="username">Jay Mo</h3>
 				<span class="circle"><h2 class="timer">10</h2></span>	
@@ -43,16 +43,16 @@
 			<div class="card-container">
 				<div class="content">
 					<ul id="stack_buana" class="stack stack--buana">
-						<li class="stack__item color-00">card 1</li>
-						<li class="stack__item color-11">card 2</li>
-						<li class="stack__item color-22">card 3</li>
-						<li class="stack__item color-33">card 4</li>
-						<li class="stack__item color-44">card 5</li>
-						<li class="stack__item color-55">card 6</li>
-						<li class="stack__item color-66">card 7</li>
-						<li class="stack__item color-77">card 8</li>
-						<li class="stack__item color-88">card 9</li>
-						<li class="stack__item color-99">card 10</li>
+						<li class="stack__item color-00"></li>
+						<li class="stack__item color-11"></li>
+						<li class="stack__item color-22"></li>
+						<li class="stack__item color-33"></li>
+						<li class="stack__item color-44"></li>
+						<li class="stack__item color-55"></li>
+						<li class="stack__item color-66"></li>
+						<li class="stack__item color-77"></li>
+						<li class="stack__item color-88"></li>
+						<li class="stack__item color-99"></li>
 					</ul>
 					<div class="controls display-none">
 						<button class="button button--material button--reject" data-stack="stack_buana">wrong</button>
@@ -61,7 +61,6 @@
 					<div class="material-circle"></div>
 				</div>
 
-				<!-- <form onsubmit="javascript:checkAnswer('.answers'); return false;"> -->
 				<form onsubmit="javascript:validate('#answers'); return false;" autocomplete="off">
 					<input id="answers" placeholder="Type your answer here"></input>
 				</form>
@@ -72,6 +71,7 @@
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="js/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/content.js"></script>
 		<script type="text/javascript" src="js/transition.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="js/background.js"></script>

@@ -1,7 +1,12 @@
 // Timer.js
 
-var timerVar = setInterval(countDown, 1000);
+var timerVar;
 var time = 10;
+
+function startGame() {
+	timerVar = setInterval(countDown, 1000);
+	time = 10;
+}
 
 function countDown() {
 	time--;

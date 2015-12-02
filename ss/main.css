@@ -501,6 +501,21 @@ section.play {
     /* Internet Explorer 10-11 */
     color: #ccc; }
 
+.startCircle {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background: #F06292;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 25px; }
+  .startCircle #startTimer {
+    color: #fdfdfd !important;
+    font-family: "Nunito", "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 70px !important; }
+
 .stack {
   margin: 5% auto 0;
   position: relative;
@@ -529,12 +544,18 @@ section.play {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  pointer-events: auto; }
-
-.stack__item img {
-  width: 100%;
-  display: block;
-  pointer-events: none; }
+  pointer-events: auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+  .stack__item .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fdfdfd;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5; }
 
 .controls {
   position: relative;
@@ -782,7 +803,7 @@ body.stop-scrolling {
   position: fixed;
   left: 50%;
   top: 50%;
-  margin-left: -256px;
+  margin-left: -239px;
   margin-top: -200px;
   overflow: hidden;
   display: none;
