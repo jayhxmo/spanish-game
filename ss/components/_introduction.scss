@@ -4,11 +4,11 @@ section.introduction {
 	@include full-screen;
 	@include vertical-parent;
 
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-ms-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
+	-webkit-transition: all 175ms ease;
+	-moz-transition: all 175ms ease;
+	-ms-transition: all 175ms ease;
+	-o-transition: all 175ms ease;
+	transition: all 175ms ease;
 
 	.container {
 		@include vertical-center;

@@ -1,0 +1,30 @@
+// Name
+
+section.name {
+	@include full-screen;
+	@include vertical-parent;
+
+	.container {
+		@include vertical-center;
+	}
+
+	h1.prompt {
+		color: $color-white;
+		font-family: $title-font;
+		font-size: em(64px);
+	}
+
+	form {
+		padding-left: em(7px);
+		padding-bottom: em(50px);
+	}
+
+	button.small {
+		position: relative;
+		top: 1px;
+		width: 60px;
+		height: 56px;
+		color: $color-white;
+		line-height: 56px;
+	}
+}

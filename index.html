@@ -4,7 +4,7 @@
 		<title>El Juego de Verbos</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- <link rel="shortcut icon" href="images/logo.ico"> -->
 
 		<!-- Styles -->
@@ -12,10 +12,11 @@
         <script src="js/modernizr-custom.js"></script>
 	</head>
 	<body>
-		<section class="introduction">
+		<div class="background color-0"></div>
+		<section class="introduction display-none">
 			<div class="container">
 				<h1 class="title">Juego de el Pret&eacute;rito</h1>
-				<button onclick="moveFromTo('.introduction', '.play')">Play</button>
+				<button onclick="moveFromTo('.introduction', '.name')">Play</button>
 				<button>How to Play</button>
 				<button>Learn</button>
 				<button>Leaderboard</button>
@@ -23,9 +24,20 @@
 			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park, Ohm Nabar, Philip Hahn</s></h4>
 		</section>
 
+		<section class="name display-none">
+			<div class="container">
+				<h1 class="prompt">Enter your name</h1>
+				<form onsubmit="javascript:submitName('#username'); return false;">
+					<input id="username" placeholder="Your Name"></input>
+					<button class="small" type="submit"><i class="fa fa-arrow-right"></i></button>
+				</form>
+			</div>
+		</section>
+
 		<section class="play">
 			<div class="card-container">
-				<div class="content color-2">
+				<h3 class="username"></h3>	
+				<div class="content">
 					<ul id="stack_buana" class="stack stack--buana">
 						<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
 						<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
