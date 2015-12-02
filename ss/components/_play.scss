@@ -56,4 +56,33 @@ section.play {
 			}
 		}
 	}
+
+	input.answers {
+		position: absolute;
+		left: 50%;
+		bottom: 10%;
+		width: 500px;
+		margin-left: -250px;
+		padding-bottom: em(10px);
+		background: none;
+		color: $color-white;
+		border: none;
+		border-bottom: 3px solid $color-gallery;
+		font-size: em(36px);
+	}
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    color: $color-silverchalice;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $color-silverchalice;
+	   opacity: 1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: $color-silverchalice;
+	   opacity: 1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: $color-silverchalice;
+	}
 }

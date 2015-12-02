@@ -14,4 +14,5 @@ function submitName(name) {
 	console.log($(name).val());
 	console.log($('h3.username').text());
 	moveFromTo(".name", ".play");
+	$(".answers").focus();
 }
