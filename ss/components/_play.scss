@@ -7,4 +7,53 @@ section.play {
 	-ms-transition: all 175ms ease;
 	-o-transition: all 175ms ease;
 	transition: all 175ms ease;
+
+	nav.statusBar {
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+		height: auto;
+		padding: 3% 20% 0;
+		background: none;
+
+		h3 {
+			display: inline-block;
+			color: $color-white;
+			font-family: $title-font;
+			font-size: em(18px);
+			font-weight: 400;
+		}
+
+		.username {
+			float: left;
+			margin: 0 auto 0 0;
+			text-align: left;
+		}
+
+		.score {
+			float: right;
+			margin: 0 0 0 auto;
+			text-align: right;
+		}
+
+		.circle {
+			position: absolute;
+			top: calc(3% -35px);
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-left: -35px;
+			background: #F06292;
+			border-radius: 50%;
+			text-align: center;
+
+			.timer {
+				color: $color-white;
+				font-family: $title-font;
+				font-size: em(24px);
+				font-weight: 400;
+				line-height: 70px;
+			}
+		}
+	}
 }

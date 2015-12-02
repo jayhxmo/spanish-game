@@ -2,15 +2,14 @@
 	margin: 0 auto;
 	position: relative;
 	z-index: 1000;
-	width: 320px;
-	height: 320px;
+	width: 600px;
+	height: 350px;
 	padding: 0;
 	list-style: none;
     pointer-events: none;
 }
 
 .stack__item {
-	background: #fff;
 	height: 100%;
 	width: 100%;
 	border-radius: 4px;
@@ -125,9 +124,9 @@
 }
 
 .material-circle {
-	width: 150vh;
-	height: 150vh;
-	margin: -75vh 0 0 -75vh;
+	width: 200vh;
+	height: 200vh;
+	margin: -100vh 0 0 -100vh;
 	z-index: 0;
 	border-radius: 50%;
 	pointer-events: none;
