@@ -1,0 +1,47 @@
+// Introduction
+
+section.introduction {
+	@include full-screen;
+	@include vertical-parent;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+
+	.container {
+		@include vertical-center;
+		text-align: center;
+
+		h1.title {
+			color: $color-white;
+			font-family: $title-font;
+			font-size: em(64px);
+		}
+
+		button {
+			display: block;
+			margin: 5px auto;
+		}
+	}
+
+	.credit {
+		position: absolute;
+		bottom: 3px;
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+	}
+}
+
+.color-0 { background: #3f51b5; }
+.color-1 { background: #5cc2f1; }
+.color-2 { background: #fff59d; }
+.color-3 { background: #9993c1; }
+.color-4 { background: #e88a63; }
+.color-5 { background: #91c794; }
+.color-6 { background: #565f77; }
+.color-7 { background: #9d62c5; }
+.color-8 { background: #EA9292; }
+.color-9 { background: #7c79ce; }

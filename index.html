@@ -11,6 +11,17 @@
         <link href="ss/main.css" rel="stylesheet">
 	</head>
 	<body>
+		<section class="introduction">
+			<div class="container">
+				<h1 class="title">Juego de el Pret&eacute;rito</h1>
+				<button>Play</button>
+				<button>How to Play</button>
+				<button>Learn</button>
+				<button>Leaderboard</button>
+			</div>
+			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park, Ohm Nabar, Philip Hahn</s></h4>
+		</section>
+		
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
@@ -19,6 +30,22 @@
         		easing: 'easeInOutExpo',
 		        speed:  700
 		    });
+		</script>
+		<script type="text/javascript">
+			fade(1);
+			console.log("fade 1");
+			function fade(index) {
+				console.log("fade function reached");
+				$(".introduction").removeClass("color-" + (index - 1) % 10);
+				console.log("color removed");
+				$(".introduction").addClass("color-" + index  % 10);
+				console.log("color added");
+
+				window.setTimeout(function () {
+					console.log("recursive");
+			    	fade(index + 1);
+				}, 1500);
+			}
 		</script>
 	</body>
 </html>
