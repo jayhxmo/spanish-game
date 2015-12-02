@@ -57,7 +57,7 @@ section.play {
 		}
 	}
 
-	input.answers {
+	input#answers {
 		position: absolute;
 		left: 50%;
 		bottom: 10%;
@@ -72,17 +72,20 @@ section.play {
 	}
 
 	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-	    color: $color-silverchalice;
+	   color: $color-silver;
 	}
+
 	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	   color: $color-silverchalice;
+	   color: $color-silver;
 	   opacity: 1;
 	}
+
 	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	   color: $color-silverchalice;
+	   color: $color-silver;
 	   opacity: 1;
 	}
+	
 	:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	   color: $color-silverchalice;
+	   color: $color-silver;
 	}
 }

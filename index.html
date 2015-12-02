@@ -54,15 +54,16 @@
 						<li class="stack__item color-88">card 9</li>
 						<li class="stack__item color-99">card 10</li>
 					</ul>
-					<div class="controls">
+					<div class="controls display-none">
 						<button class="button button--material button--reject" data-stack="stack_buana">wrong</button>
 						<button class="button button--material button--accept" data-stack="stack_buana">correct</button>
 					</div>
 					<div class="material-circle"></div>
 				</div>
 
-				<form onsubmit="javascript:checkAnswer('.answers'); return false;">
-					<input class="answers" placeholder="Type your answer here"></input>
+				<!-- <form onsubmit="javascript:checkAnswer('.answers'); return false;"> -->
+				<form onsubmit="javascript:validate('#answers'); return false;">
+					<input id="answers" placeholder="Type your answer here"></input>
 				</form>
 			</div><!-- /container -->
 		</section>

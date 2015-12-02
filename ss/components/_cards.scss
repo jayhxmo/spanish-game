@@ -124,15 +124,16 @@
 }
 
 .material-circle {
+	position: absolute;
+	z-index: 0;
+	left: 50%;
 	width: 200vh;
 	height: 200vh;
-	margin: -100vh 0 0 -100vh;
+	margin: 0;
 	z-index: 0;
 	border-radius: 50%;
 	pointer-events: none;
 	opacity: 0;
-	position: absolute;
-	z-index: 0;
 	-webkit-transform: scale3d(0, 0, 1);
 	transform: scale3d(0, 0, 1);
 }
