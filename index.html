@@ -14,17 +14,38 @@
 		<section class="introduction">
 			<div class="container">
 				<h1 class="title">Juego de el Pret&eacute;rito</h1>
-				<button>Play</button>
+				<button onclick="moveFromTo('.introduction', '.play')">Play</button>
 				<button>How to Play</button>
 				<button>Learn</button>
 				<button>Leaderboard</button>
 			</div>
 			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park, Ohm Nabar, Philip Hahn</s></h4>
 		</section>
+
+		<section class="play">
+			<div class="container">
+				<h2 class="content__title">Buana</h2>
+				<ul id="stack_buana" class="stack stack--buana">
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--material button--reject" data-stack="stack_buana"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--material button--accept" data-stack="stack_buana"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+				<div class="material-circle"></div>
+			</div>
+		</section>
 		
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/transition.js"></script>
+
 		<script type="text/javascript">
 			$('body').plusAnchor({
         		easing: 'easeInOutExpo',
@@ -33,16 +54,11 @@
 		</script>
 		<script type="text/javascript">
 			fade(1);
-			console.log("fade 1");
 			function fade(index) {
-				console.log("fade function reached");
 				$(".introduction").removeClass("color-" + (index - 1) % 10);
-				console.log("color removed");
 				$(".introduction").addClass("color-" + index  % 10);
-				console.log("color added");
 
 				window.setTimeout(function () {
-					console.log("recursive");
 			    	fade(index + 1);
 				}, 1500);
 			}

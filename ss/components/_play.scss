@@ -1,0 +1,10 @@
+// Play
+
+section.play {
+	@include full-screen;
+	-webkit-transition: all 175ms ease;
+	-moz-transition: all 175ms ease;
+	-ms-transition: all 175ms ease;
+	-o-transition: all 175ms ease;
+	transition: all 175ms ease;
+}

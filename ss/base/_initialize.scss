@@ -2,3 +2,21 @@ html, body {
 	@include full-screen;
 	min-height: 100%;
 }
+
+.display-none {
+	display: none;
+	-webkit-transition: all 175ms ease;
+	-moz-transition: all 175ms ease;
+	-ms-transition: all 175ms ease;
+	-o-transition: all 175ms ease;
+	transition: all 175ms ease;
+}
+
+.visible-none {
+	opacity: 0;
+	-webkit-transition: all 175ms ease;
+	-moz-transition: all 175ms ease;
+	-ms-transition: all 175ms ease;
+	-o-transition: all 175ms ease;
+	transition: all 175ms ease;
+}

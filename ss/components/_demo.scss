@@ -1,0 +1,36 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.content {
+	-webkit-align-self: stretch;
+	align-self: stretch;
+	overflow: hidden;
+	padding: 2em 2em 6em;
+	width: 50%;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	@media screen and (max-width: 60em) { width: 100%; }
+
+	&:nth-child(even):last-child { width: 100%; }
+}
+
