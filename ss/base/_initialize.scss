@@ -1,6 +1,7 @@
 html, body {
 	@include full-screen;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 .background {

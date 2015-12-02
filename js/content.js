@@ -99,24 +99,3 @@ function getAnswer() {
 		}
 	});
 }
-
-// function getAnswer() {
-// 	var notFound = 0;
-// 	var cardNumber = 0;
-// 	$('.stack__item').each(function(i, obj) {
-// 		cardNumber++;
-
-// 		if ($(this).css('opacity') != 0 && notFound == 0) {
-// 			notFound++;
-// 		}
-		
-// 		else if ($(this).css('opacity') != 0 && notFound == 1) {
-// 			theAnswer = answers[questionIndex[cardNumber]];
-// 			console.log("Card #" + cardNumber + " & Q #" + questionIndex[cardNumber]);
-// 			console.log(prompts[questionIndex[cardNumber]]);
-// 			console.log("Answer is " + theAnswer);
-// 			notFound++;
-// 			return theAnswer;
-// 		}
-// 	});
-// }
