@@ -1,7 +1,9 @@
 // validate.js
 var points = 0;
 function validate(input) {
-	if ($(input).val() == "") {
+	getAnswer();
+	console.log("Input: " + $(input).val() + " =?= " + theAnswer + " is " + ($(input).val() == theAnswer));
+	if ($(input).val() == theAnswer) {
 		$('.button--accept[data-stack = stack_buana]').click();
 		points += 100;
 	}

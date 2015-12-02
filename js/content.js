@@ -27,27 +27,27 @@ var prompts = [
 ];
 
 var answers = [
-	"le&iacute;",
-	"le&iacute;ste",
-	"le&iacute;mos",
-	"ley&oacute;",
-	"le&iacute;steis",
+	"le\xED",
+	"le\xEDste",
+	"le\xEDmos",
+	"ley\xF3",
+	"le\xEDsteis",
 	"leyeron",
 
 	// new verb 
-	"constru&iacute;",
+	"constru\xED",
 	"construiste",
-	"construy&oacute;",
+	"construy\xF3",
 	"construimos",
 	"construisteis",
 	"construyeron",
 
 	// new verb
-	"ca&iacute;",
-	"ca&iacute;ste",
-	"cay&oacute;",
-	"ca&iacute;mos",
-	"ca&iacute;steis",
+	"ca\xED",
+	"ca\xEDste",
+	"cay\xF3",
+	"ca\xEDmos",
+	"ca\xEDsteis",
 	"cayeron"
 ];
 
@@ -81,14 +81,42 @@ function notUsed(number) {
 	return true;
 }
 
+var theAnswer = "empty";
+
 function getAnswer() {
+	var notFound = true;
 	var cardNumber = 0;
 	$('.stack__item').each(function(i, obj) {
 		cardNumber++;
-		if ($(this).css('opacity') != 0) {
-			console.log("currently at #" + cardNumber);
-			console.log("answer is " + answers[questionIndex[cardNumber]]);
-			return answers[questionIndex[cardNumber]];
+		if ($(this).css('opacity') != 0 && notFound) {
+			cardNumber--;
+			theAnswer = answers[questionIndex[cardNumber]];
+			console.log("Card #" + cardNumber + " & Q #" + questionIndex[cardNumber]);
+			console.log(prompts[questionIndex[cardNumber]]);
+			console.log("Answer is " + theAnswer);
+			notFound = false;
+			return theAnswer;
 		}
 	});
 }
+
+// function getAnswer() {
+// 	var notFound = 0;
+// 	var cardNumber = 0;
+// 	$('.stack__item').each(function(i, obj) {
+// 		cardNumber++;
+
+// 		if ($(this).css('opacity') != 0 && notFound == 0) {
+// 			notFound++;
+// 		}
+		
+// 		else if ($(this).css('opacity') != 0 && notFound == 1) {
+// 			theAnswer = answers[questionIndex[cardNumber]];
+// 			console.log("Card #" + cardNumber + " & Q #" + questionIndex[cardNumber]);
+// 			console.log(prompts[questionIndex[cardNumber]]);
+// 			console.log("Answer is " + theAnswer);
+// 			notFound++;
+// 			return theAnswer;
+// 		}
+// 	});
+// }
