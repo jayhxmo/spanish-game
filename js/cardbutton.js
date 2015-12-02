@@ -71,7 +71,10 @@
 					visibleCount++;
 				}
 			});
-			if (visibleCount == 1) gameOver();
+			if (visibleCount == 1) {
+				gameOver();
+				stopTime();
+			}
 		});
 	});
 })();

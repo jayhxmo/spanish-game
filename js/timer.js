@@ -9,17 +9,21 @@ function countDown() {
 
 	if (time == 0) {
 		$('.button--reject[data-stack = stack_buana]').click();
-		resetTime();
+		if (!isGameOver()) resetTime();
 	}
 }
 
 function resetTime() {
 	time = 10;
 	$('.timer').text(time);
-	clearInterval(timerVar);
+	stopTime();
 	timerVar = setInterval(countDown, 1000);
 }
 
 function getScore() {
 	return time * 100;
+}
+
+function stopTime() {
+	clearInterval(timerVar);
 }
