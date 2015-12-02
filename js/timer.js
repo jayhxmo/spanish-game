@@ -18,9 +18,6 @@ function resetTime() {
 	$('.timer').text(time);
 	clearInterval(timerVar);
 	timerVar = setInterval(countDown, 1000);
-	cardCount--;
-
-	if (cardCount == 0) gameOver();
 }
 
 function getScore() {

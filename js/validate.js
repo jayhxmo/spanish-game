@@ -15,8 +15,6 @@ function validate(input) {
 		points -= 10;
 	}
 
-	cardCount--;
-	if (cardCount == 0) gameOver();
 	resetTime();
 	$(input).val("");
 	$(input).focus();
@@ -28,4 +26,5 @@ function validate(input) {
 
 function gameOver() {
 	clearInterval(timerVar);
+	console.log("Game Over");
 }

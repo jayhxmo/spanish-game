@@ -63,6 +63,15 @@
 				classie.remove(radialAction, classie.has(bttn, 'button--reject') ? 'material-circle--reject' : 'material-circle--accept');
 				classie.remove(radialAction, 'material-circle--active');
 			});
+
+			// Gameover check
+			var visibleCount = 0;
+			$('.stack__item').each(function(i, obj) {
+				if ($(this).css('opacity') != 0) {
+					visibleCount++;
+				}
+			});
+			if (visibleCount == 1) gameOver();
 		});
 	});
 })();
