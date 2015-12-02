@@ -581,7 +581,7 @@ section.play {
 .clearfix:after {
   clear: both; }
 
-.container {
+.card-container {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
