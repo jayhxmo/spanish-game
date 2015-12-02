@@ -28,7 +28,7 @@
 			<div class="container">
 				<h1 class="prompt">Enter your name</h1>
 				<form onsubmit="javascript:submitName('#username'); return false;">
-					<input id="username" placeholder="Your Name"></input>
+					<input id="username" placeholder="Your Name" autocomplete="off"></input>
 					<button class="small" type="submit"><i class="fa fa-arrow-right"></i></button>
 				</form>
 			</div>
@@ -37,7 +37,7 @@
 		<section class="play">
 			<nav class="statusBar">
 				<h3 class="username">Jay Mo</h3>
-				<span class="circle"><h2 class="timer">9</h2></span>	
+				<span class="circle"><h2 class="timer">10</h2></span>	
 				<h3 class="score">0 PTS</h3>	
 			</nav>
 			<div class="card-container">
@@ -62,7 +62,7 @@
 				</div>
 
 				<!-- <form onsubmit="javascript:checkAnswer('.answers'); return false;"> -->
-				<form onsubmit="javascript:validate('#answers'); return false;">
+				<form onsubmit="javascript:validate('#answers'); return false;" autocomplete="off">
 					<input id="answers" placeholder="Type your answer here"></input>
 				</form>
 			</div><!-- /container -->
@@ -80,5 +80,6 @@
 		<script src="js/main.js"></script>
 		<script type="text/javascript" src="js/cardbutton.js"></script>
 		<script type="text/javascript" src="js/validate.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
 	</body>
 </html>

@@ -20,7 +20,7 @@ section.play {
 			display: inline-block;
 			color: $color-white;
 			font-family: $title-font;
-			font-size: em(18px);
+			font-size: em(24px);
 			font-weight: 400;
 		}
 
@@ -84,7 +84,7 @@ section.play {
 	   color: $color-silver;
 	   opacity: 1;
 	}
-	
+
 	:-ms-input-placeholder { /* Internet Explorer 10-11 */
 	   color: $color-silver;
 	}

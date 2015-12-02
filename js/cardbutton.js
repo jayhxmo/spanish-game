@@ -27,7 +27,9 @@
 		return nextSibling;
 	}
 
-	var buana = new Stack(document.getElementById('stack_buana'));
+	var buana = new Stack(document.getElementById('stack_buana'), { 
+		infinite: false
+	});
 		
 
 	// controls the click ring effect on the button
