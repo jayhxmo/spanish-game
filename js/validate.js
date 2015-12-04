@@ -2,9 +2,9 @@
 var points = 0;
 function validate(input) {
 	getAnswer();
-	console.log("Input: " + $(input).val() + " =?= " + theAnswer + " is " + ($(input).val() == theAnswer));
-	// if ($(input).val() == theAnswer) {
-	if ($(input).val() == "") {
+	// console.log("Input: " + $(input).val() + " =?= " + theAnswer + " is " + ($(input).val() == theAnswer));
+	if ($(input).val() == theAnswer) {
+	// if ($(input).val() == "") {
 		$('.button--accept[data-stack = stack_buana]').click();
 		points += 100;
 	}
@@ -47,30 +47,60 @@ function gameOver() {
 	if (points < 100) {
 		swal({
 			title: "Juego Terminado",
-			text: "You did a terrible job with a score of " + points + "<br><br><button class=\"confirm\" onclick=\"alert(\"thisshouldtakeyoutolearnpage\")\">Learn More</button>",
+			text: "Muy mal. Necesita estudiar. Tus puntos: " + points,
 			html: true,
 			type: "error",
-			showConfirmButton: false
+			confirmButtonText: "aprender",
+			closeOnConfirm: true
+		},
+		function(){
+			setTimeout(function(){ 
+				$('.play').addClass('display-none');
+				$('.learn').removeClass('visible-none');
+		    }, 175);  
+		    
+			$('.play').addClass('visible-none');
+			$('.learn').removeClass('display-none');
 		});
 	}
 
 	else if (points < 500) {
 		swal({
 			title: "Juego Terminado",
-			text: "Nice job! You got a score of  " + points + "<br><br><button class=\"confirm\" onclick=\"alert(\"thisshouldtakeyoutolearnpage\")\">Learn More</button>",
+			text: "Bien. Tus puntos:  " + points,
 			html: true,
-			showConfirmButton: false
+			confirmButtonText: "estudiar",
+			closeOnConfirm: true
+		},
+		function(){
+			setTimeout(function(){ 
+				$('.play').addClass('display-none');
+				$('.learn').removeClass('visible-none');
+		    }, 175);  
+		    
+			$('.play').addClass('visible-none');
+			$('.learn').removeClass('display-none');
 		});
 	}
 
 	else {
 		swal({
 			title: "Juego Terminado",
-			text: "Great job! You got a score of  " + points + "<br><br><button class=\"confirm\" onclick=\"alert(\"thisshouldtakeyoutolearnpage\")\">Learn More</button>",
+			text: "MUY BIEN. Tus puntos:  " + points,
 			html: true,
 			type: "success",
-			showConfirmButton: false
-		});	
+			confirmButtonText: "felicidades",
+			closeOnConfirm: true
+		},
+		function(){
+			setTimeout(function(){ 
+				$('.play').addClass('display-none');
+				$('.learn').removeClass('visible-none');
+		    }, 175);  
+		    
+			$('.play').addClass('visible-none');
+			$('.learn').removeClass('display-none');
+		});
 	}
 }
 

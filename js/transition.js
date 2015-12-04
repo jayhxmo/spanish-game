@@ -1,5 +1,6 @@
 // Transition.js
 function moveFromTo(from, to) {
+	console.log("Function called from " + from + " and to " + to);
 	setTimeout(function(){ 
 		$(from).addClass('display-none');
 		$(to).removeClass('visible-none');

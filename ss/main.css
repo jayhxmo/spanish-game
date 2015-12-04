@@ -552,6 +552,22 @@ section.play {
     font-size: 1.125em;
     font-weight: 400;
     line-height: 1.75; }
+  .learn table {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin: 75px auto; }
+    .learn table tr {
+      margin: 3px auto;
+      border: 1px solid rgba(0, 0, 0, 0.15); }
+    .learn table td {
+      padding: 0.9375em 15px;
+      background: rgba(255, 255, 255, 0.075); }
+  .learn .special-table {
+    margin: 75px 25px; }
+  .learn .xl-container {
+    width: 100%;
+    margin: 0 auto; }
 
 .stack {
   margin: 5% auto 0;

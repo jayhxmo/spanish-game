@@ -91,9 +91,9 @@ function getAnswer() {
 		if ($(this).css('opacity') != 0 && notFound) {
 			cardNumber--;
 			theAnswer = answers[questionIndex[cardNumber]];
-			console.log("Card #" + cardNumber + " & Q #" + questionIndex[cardNumber]);
-			console.log(prompts[questionIndex[cardNumber]]);
-			console.log("Answer is " + theAnswer);
+			// console.log("Card #" + cardNumber + " & Q #" + questionIndex[cardNumber]);
+			// console.log(prompts[questionIndex[cardNumber]]);
+			// console.log("Answer is " + theAnswer);
 			notFound = false;
 			return theAnswer;
 		}
