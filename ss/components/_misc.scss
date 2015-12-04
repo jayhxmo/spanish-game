@@ -1,9 +1,12 @@
 // Misc.scss
 .how-to {
 	color: $color-white;
+	overflow-y: scroll;
+	max-height: 100%;
 
 	.container {
 		padding-top: 3%;
+		text-align: center;
 	}
 
 	h1.title {
@@ -17,5 +20,35 @@
 		font-size: em(18px);
 		font-weight: 400;
 		line-height: 1.5;
+	}
+
+	.screenshot {
+		width: 640px;
+		margin: 5px auto;
+	}
+}
+
+.learn {
+	color: $color-white;
+	// overflow-y: scroll;
+	// max-height: 100%;
+
+	.container {
+		padding-top: 3%;
+		text-align: center;
+	}
+
+	h1.title {
+		font-family: $title-font;
+		font-size: em(48px);
+		font-weight: 400;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	p {
+		font-size: em(18px);
+		font-weight: 400;
+		line-height: 1.75;
 	}
 }

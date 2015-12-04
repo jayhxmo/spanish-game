@@ -18,7 +18,7 @@ function submitName(name) {
 	loadSentences();
 
 	swal({
-		title: "Get Ready",
+		title: "Prep&aacute;rate",
 		text: "<div class=\"startCircle\"><h2 id=\"startTimer\"></h2></div>",
 		timer: 3000,
 		html: true,

@@ -518,9 +518,12 @@ section.play {
     line-height: 70px !important; }
 
 .how-to {
-  color: #fdfdfd; }
+  color: #fdfdfd;
+  overflow-y: scroll;
+  max-height: 100%; }
   .how-to .container {
-    padding-top: 3%; }
+    padding-top: 3%;
+    text-align: center; }
   .how-to h1.title {
     font-family: "Nunito", "Open Sans", sans-serif;
     font-size: 3em;
@@ -530,6 +533,25 @@ section.play {
     font-size: 1.125em;
     font-weight: 400;
     line-height: 1.5; }
+  .how-to .screenshot {
+    width: 640px;
+    margin: 5px auto; }
+
+.learn {
+  color: #fdfdfd; }
+  .learn .container {
+    padding-top: 3%;
+    text-align: center; }
+  .learn h1.title {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    text-align: center; }
+  .learn p {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.75; }
 
 .stack {
   margin: 5% auto 0;

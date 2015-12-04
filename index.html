@@ -13,22 +13,22 @@
 	</head>
 	<body>
 		<div class="background color-0"></div>
-		<section class="introduction">
+		<section class="introduction display-none">
 			<div class="container">
 				<h1 class="title">Juego de el Pret&eacute;rito</h1>
 				<button onclick="moveFromTo('.introduction', '.name')">Play</button>
-				<button>How to Play</button>
-				<button>Learn</button>
-				<button>Leaderboard</button>
+				<button>C&oacute;mo jugar</button>
+				<button>Aprender</button>
+				<button>Clasificaci&oacute;n</button>
 			</div>
 			<h4 class="credit">Made by Jay Mo, <s>Jeemin Park,</s> Ohm Nabar, <s>Philip Hahn</s></h4>
 		</section>
 
 		<section class="name display-none">
 			<div class="container">
-				<h1 class="prompt">Enter your name</h1>
+				<h1 class="prompt">Introduzca su nombre</h1>
 				<form onsubmit="javascript:submitName('#username'); return false;">
-					<input id="username" placeholder="Your Name" autocomplete="off"></input>
+					<input id="username" placeholder="Su nombre" autocomplete="off"></input>
 					<button class="small" type="submit"><i class="fa fa-arrow-right"></i></button>
 				</form>
 			</div>
@@ -62,7 +62,7 @@
 				</div>
 
 				<form onsubmit="javascript:validate('#answers'); return false;" autocomplete="off">
-					<input id="answers" placeholder="Type your answer here"></input>
+					<input id="answers" placeholder="Escriba su respuesta"></input>
 				</form>
 			</div><!-- /container -->
 		</section>
@@ -70,7 +70,25 @@
 		<section class="how-to display-none">
 			<div class="container">
 				<h1 class="title">C&oacute;mo Jugar</h1>
+				<br>
+				<p>En primer lugar, introduzca su nombre</p>
+				<img class="screenshot" src="images/instruction-name.png"></img>
+				
+				<br><br><br>
+				<p>Tienes 3 segundos para estar listo</p>
+				<img class="screenshot" src="images/instruction-ready.png"></img>
+				
+				<br><br><br>
 				<p>Escriba el verbo correcto en el espacio en blanco. &iexcl;Vaya r&aacute;pidamente!</p>
+				<img class="screenshot" src="images/instruction-game.png"></img>
+				<br><br><br><br>
+			</div>
+		</section>
+
+		<section class="learn">
+			<div class="container">
+				<h1 class="title">Aprender</h1>
+				<p>'Leer' y 'construir' tienen acentos en el 'i' para las formas de 't&uacute;, nosotros, y vosotros'. Todos de estos verbos tienen un 'y' en las formas de '&eacute;l/ella/usted y ellos/ellas/ustedes' en lugar de el 'i'. Las otras formas son normales.</p>
 			</div>
 		</section>
 
