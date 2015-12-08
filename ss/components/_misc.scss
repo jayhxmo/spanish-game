@@ -78,3 +78,62 @@
 		margin: 0 auto;
 	}
 }
+
+.leaderboard {
+	color: $color-white;
+	// overflow-y: scroll;
+	// max-height: 100%;
+
+	.container {
+		padding-top: 3%;
+		text-align: center;
+	}
+
+	h1.title {
+		font-family: $title-font;
+		font-size: em(48px);
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.rank-row {
+		width: 640px;
+		background: rgba(255, 255, 255, 0.25);
+		margin: 5px auto;
+		height: 60px;
+		line-height: 60px;
+
+		.ranking {
+			@include span-columns(3);
+			text-align: left;
+			font-family: $title-font;
+
+			.rank-circle {
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				margin: 10px 0 0 15px;
+				text-align: center;
+				border-radius: 50%;
+				// background: #F06292;
+				background: rgba(255, 255, 255, 0.25);
+				font-weight: 500;
+			}
+		}
+
+		.name {
+			@include span-columns(6);
+			font-family: $title-font;
+			font-size: em(20px);
+		}
+
+		.points {
+			@include span-columns(3);
+			font-family: $title-font;
+			text-align: right;
+			padding-right: 15px;
+			// color: #F06292;
+			font-weight: 500;
+		}
+	}
+}

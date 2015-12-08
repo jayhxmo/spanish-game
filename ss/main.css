@@ -569,6 +569,61 @@ section.play {
     width: 100%;
     margin: 0 auto; }
 
+.leaderboard {
+  color: #fdfdfd; }
+  .leaderboard .container {
+    padding-top: 3%;
+    text-align: center; }
+  .leaderboard h1.title {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center; }
+  .leaderboard .rank-row {
+    width: 640px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 5px auto;
+    height: 60px;
+    line-height: 60px; }
+    .leaderboard .rank-row .ranking {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      text-align: left;
+      font-family: "Nunito", "Open Sans", sans-serif; }
+      .leaderboard .rank-row .ranking:last-child {
+        margin-right: 0; }
+      .leaderboard .rank-row .ranking .rank-circle {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px 0 0 15px;
+        text-align: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.25);
+        font-weight: 500; }
+    .leaderboard .rank-row .name {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%;
+      font-family: "Nunito", "Open Sans", sans-serif;
+      font-size: 1.25em; }
+      .leaderboard .rank-row .name:last-child {
+        margin-right: 0; }
+    .leaderboard .rank-row .points {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      font-family: "Nunito", "Open Sans", sans-serif;
+      text-align: right;
+      padding-right: 15px;
+      font-weight: 500; }
+      .leaderboard .rank-row .points:last-child {
+        margin-right: 0; }
+
 .stack {
   margin: 5% auto 0;
   position: relative;

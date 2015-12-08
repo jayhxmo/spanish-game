@@ -13,13 +13,13 @@
 	</head>
 	<body>
 		<div class="background color-0"></div>
-		<section class="introduction">
+		<section class="introduction display-none">
 			<div class="container">
 				<h1 class="title">Juego de el Pret&eacute;rito</h1>
 				<button onclick="moveFromTo('.introduction', '.name')">Jugar</button>
 				<button onclick="moveFromTo('.introduction', '.how-to')">C&oacute;mo jugar</button>
 				<button onclick="moveFromTo('.introduction', '.learn')">Aprender</button>
-				<button>Clasificaci&oacute;n</button>
+				<button onclick="moveFromTo('.introduction', '.leaderboard')">Clasificaci&oacute;n</button>
 			</div>
 			<h4 class="credit">Hecho por Jay Mo, <s>Jeemin Park,</s> Ohm Nabar, <s>Philip Hahn</s></h4>
 		</section>
@@ -126,6 +126,83 @@
 			</center>
 		</section>
 
+		<section class="leaderboard">
+			<div class="container">
+				<h1 class="title">Clasificaci&oacute;n</h1>
+				<div class="leaderboard-table">
+					<div id="rank-1" class="rank-row">
+						<div class="ranking">
+							<div id="rank-1" class="rank-circle">1</div>
+						</div>
+						<div id="name-1" class="name">(undefined)</div>
+						<div id="pts-1" class="points">0 PTS</div>
+					</div>
+					<div id="rank-2" class="rank-row">
+						<div class="ranking">
+							<div id="rank-2" class="rank-circle">2</div>
+						</div>
+						<div id="name-2" class="name">(undefined)</div>
+						<div id="pts-2" class="points">0 PTS</div>
+					</div>
+					<div id="rank-3" class="rank-row">
+						<div class="ranking">
+							<div id="rank-3" class="rank-circle">3</div>
+						</div>
+						<div id="name-3" class="name">(undefined)</div>
+						<div id="pts-3" class="points">0 PTS</div>
+					</div>
+					<div id="rank-4" class="rank-row">
+						<div class="ranking">
+							<div id="rank-4" class="rank-circle">4</div>
+						</div>
+						<div id="name-4" class="name">(undefined)</div>
+						<div id="pts-4" class="points">0 PTS</div>
+					</div>
+					<div id="rank-5" class="rank-row">
+						<div class="ranking">
+							<div id="rank-5" class="rank-circle">5</div>
+						</div>
+						<div id="name-5" class="name">(undefined)</div>
+						<div id="pts-5" class="points">0 PTS</div>
+					</div>
+					<div id="rank-6" class="rank-row">
+						<div class="ranking">
+							<div id="rank-6" class="rank-circle">6</div>
+						</div>
+						<div id="name-6" class="name">(undefined)</div>
+						<div id="pts-6" class="points">0 PTS</div>
+					</div>
+					<div id="rank-7" class="rank-row">
+						<div class="ranking">
+							<div id="rank-7" class="rank-circle">7</div>
+						</div>
+						<div id="name-7" class="name">(undefined)</div>
+						<div id="pts-7" class="points">0 PTS</div>
+					</div>
+					<div id="rank-8" class="rank-row">
+						<div class="ranking">
+							<div id="rank-8" class="rank-circle">8</div>
+						</div>
+						<div id="name-8" class="name">(undefined)</div>
+						<div id="pts-8" class="points">0 PTS</div>
+					</div>
+					<div id="rank-9" class="rank-row">
+						<div class="ranking">
+							<div id="rank-9" class="rank-circle">9</div>
+						</div>
+						<div id="name-9" class="name">(undefined)</div>
+						<div id="pts-9" class="points">0 PTS</div>
+					</div>
+					<div id="rank-10" class="rank-row">
+						<div class="ranking">
+							<div id="rank-10" class="rank-circle">10</div>
+						</div>
+						<div id="name-10" class="name">(undefined)</div>
+						<div id="pts-10" class="points">0 PTS</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
@@ -142,5 +219,7 @@
 		<script type="text/javascript" src="js/cardbutton.js"></script>
 		<script type="text/javascript" src="js/validate.js"></script>
 		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/parse.min.js"></script>
+		<script type="text/javascript" src="js/leaderboard.js"></script>
 	</body>
 </html>
