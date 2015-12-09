@@ -18,6 +18,7 @@ var objID = [
 	"kM2ACgI0fw",
 	"iWQzKHxdHQ"
 ];
+
 query.get("9iHrSFTW2F", {
   success: function(results) {
   	$("#name-1").text(results.get('Name'));
@@ -158,6 +159,11 @@ function updateBoard(name, score) {
 
 		pt9 = score;
 		n9 = name;
+
+  		$("#name-10").text(n10);
+  		$("#pts-10").text(pt10 + " PTS");
+		$("#name-9").text(name);
+  		$("#pts-9").text(score + " PTS");
 	}
 
 	if (index <= 8) {
@@ -166,7 +172,59 @@ function updateBoard(name, score) {
 
 		pt8 = score;
 		n8 = name;
+
+  		$("#name-9").text(n9);
+  		$("#pts-9").text(pt9 + " PTS");
+		$("#name-8").text(name);
+  		$("#pts-8").text(score + " PTS");
 	}
+
+	if (index <= 7) {
+		pt8 = pt7;
+		n8 = n7;
+
+		pt7 = score;
+		n7 = name;
+
+  		$("#name-8").text(n8);
+  		$("#pts-8").text(pt8 + " PTS");
+		$("#name-7").text(name);
+  		$("#pts-7").text(score + " PTS");
+	}
+
+	if (index <= 7) {
+		pt8 = pt7;
+		n8 = n7;
+
+		pt7 = score;
+		n7 = name;
+
+  		$("#name-8").text(n8);
+  		$("#pts-8").text(pt8 + " PTS");
+		$("#name-7").text(name);
+  		$("#pts-7").text(score + " PTS");
+	}
+
+
+	query.get(objID[10 - 1], {
+	  success: function(results) {
+	  	results.set('Name', n10);
+	  	results.set('Points', pt10);
+	  	results.save();
+	  },
+	  error: function(model, error) {}
+	});
+
+	query.get(objID[9 - 1], {
+	  success: function(results) {
+	  	results.set('Name', n9);
+	  	results.set('Points', pt9);
+	  	results.save();
+	  },
+	  error: function(model, error) {}
+	});
+
+
 	// if (index == 10) {
 	// 	query.get(objID[10 - 1], {
 	// 	  success: function(results) {
